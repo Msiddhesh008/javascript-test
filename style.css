@@ -1,0 +1,108 @@
+
+@import url('https://fonts.googleapis.com/css2?family=Mukta:wght@200;400&display=swap');
+:root{
+  --color-primary : #3457D5;
+  --color-background: #F0F8FF;
+  --font-color:#0a2351;
+}
+
+body{
+  background-color: var(--color-background);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-top: 10vh;
+  font-family: 'Mukta', sans-serif;
+}
+
+#start-btn{
+  display: block;
+  background-color: var(--color-primary) ;
+  color: #fff;
+  border: none;
+  font-size: large;
+  padding: 1rem 3rem;
+  margin-top: 30vh;
+  cursor: pointer;
+  border-radius: 6px;
+}
+
+#start-btn:hover{
+  opacity: 90%;
+}
+
+.wrapper{
+  display: none;
+  background-color: #ffffff;
+  padding: 1rem 2rem 6rem 2rem;
+  width: 50%;
+  color: var(--font-color);
+  position: relative;
+  box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px, rgba(60, 64, 67, 0.15) 0px 1px 3px 1px;
+}
+
+.wrapper button{
+  display: block;       /*  ============ */
+  background-color: var(--color-primary) ;
+  color: #fff;
+  border: none;
+  font-size: large;
+  position: absolute;
+  padding: 1rem 3rem;
+  cursor: pointer;
+  right: 4rem;
+  bottom: 2rem;
+  border-radius: 6px;
+  transition: 0.5s;
+}
+.wrapper button:hover{
+  opacity: 90%;
+}
+
+.wrapper h2{
+  font-weight: normal;
+  margin: 2.5rem 0;
+}
+
+.wrapper .option-cnt{
+  display: block;        /*============*/
+  width: 90%;
+  align-items: center;
+  border: 1px solid var(--color-primary);
+  cursor: pointer;
+  /* height: 2.rem; */
+  padding: 0.5rem 1rem;
+  gap: 0.5rem;
+  border-radius: 6px;
+  margin: 0.8rem 0;
+  transition: 0.5s;
+}
+.wrapper .option-cnt:hover{
+  background-color: #3457d52f;
+}
+
+.wrapper .option-cnt input{
+  cursor: pointer;
+}
+
+.wrapper .option-cnt label{
+  cursor: pointer;
+}
+
+.wrapper #score{
+  display: none;      /*============*/
+  font-weight: bold;
+}
+@media screen and (max-width: 620px) {
+
+  
+.wrapper{
+  width: 90%;
+}
+
+.wrapper button{
+  right: 1.6rem;
+}
+
+}
+

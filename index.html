@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <title>Quiz App</title>
+  </head>
+  <body>
+    <!-- ===[ Welcome Page ]=== -->
+    <button id="start-btn">Start</button>
+
+    <!-- ===[ Question container ]=== -->
+    <form class="wrapper">
+      <h2>Q 1. Sample question?</h2><h2 id="score" ></h2><h2 id="msg"></h2>
+
+      <div class="wrap">
+      <div class="option-cnt"> 
+        <input type="radio"  name="Options" id="ans-a" class="ans"/>
+        <label for="ans-a"  >A. Option</label>
+      </div>
+
+      <div class="option-cnt"> 
+        <input type="radio"  name="Options" id="ans-b" class="ans"/>
+        <label for="ans-b">B. Option</label>
+      </div>
+
+      <div class="option-cnt"> 
+        <input type="radio"  name="Options" id="ans-c" class="ans"/>
+        <label for="ans-c" >C. Option</label>
+      </div>
+
+      <div class="option-cnt"> 
+        <input type="radio"  name="Options" class="ans" id="ans-d"/>
+        <label for="ans-d">D. Option</label>
+      </div>
+    <button id="start-btn-2" type="submit">Submit</button>
+    </div>
+  </div>
+  </form>
+
+  </body>
+  <script src="script.js"></script>
+</html>
